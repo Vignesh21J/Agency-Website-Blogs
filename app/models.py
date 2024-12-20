@@ -20,7 +20,7 @@ class GeneralInfo(models.Model):
     
 
 class Service(models.Model):
-    icon = models.CharField(max_length=20, blank=True, null=True)
+    icon = models.CharField(max_length=40, blank=True, null=True)
     title = models.CharField(max_length=255, unique=True)
     description = models.TextField()
 
@@ -45,7 +45,7 @@ class Testimonial(models.Model):
 
     rating_count = models.FloatField(choices = stars_count)
     username = models.CharField(max_length=50)
-    user_job_title = models.CharField(max_length=50)
+    user_job_title = models.CharField(max_length=70)
     review = models.TextField()
 
     def __str__(self):
