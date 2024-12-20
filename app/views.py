@@ -45,7 +45,7 @@ def index(request):
     frequentlyAskQns = FrequentlyAskQns.objects.all()
 
     # Recent Blogs
-    recent_blogs = Blog.objects.all().order_by("-created_at")[:]
+    recent_blogs = Blog.objects.all().order_by("-created_at")[:3]
     # for blog in recent_blogs:
     #     print(f"blog : {blog}")
     #     print(f"blog.created_at : {blog.created_at}")
