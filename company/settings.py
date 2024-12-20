@@ -133,7 +133,8 @@ EMAIL_HOST = 'smtp.googlemail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'your-email-address'
-EMAIL_HOST_PASSWORD = 'your-email-app-password'  #app password
+# EMAIL_HOST_PASSWORD = 'your-email-app-password'  #app password
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 
 # Default primary key field type
