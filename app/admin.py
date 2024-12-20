@@ -22,11 +22,6 @@ class GeneralInfoAdmin(admin.ModelAdmin):
         'open_hours',
     ]
     
-    # Show you can set specific field to disable update permission
-    readonly_fields = [
-        'email'
-    ]
-
 
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
